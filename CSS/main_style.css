@@ -9,3 +9,7 @@ body{
     height: 165px;
     border-radius: 0 0 35px 35px;
 }
+
+._circle_logo_{
+    border-radius: 100%;
+}
