@@ -70,15 +70,31 @@ body {
   }
 
   .card-row {
-    height: 210px;
+    height: 265px;
     margin-bottom: 18px;
   }
 
   .product-card {
+    width: 165px;
     background-color: black;
     border-radius: 35px;
   }
 
   .none {
     background-color: #343D46;
+  }
+
+  .produc-photo {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .card-text {
+    margin-top: 8px;
+    color: white;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
   }
