@@ -1,3 +1,7 @@
+body {
+  background-color: #343D46;
+}
+
 .header {
     height: 165px;
     background-color: black;
@@ -17,11 +21,16 @@
     height: auto; /* Это сохранит соотношение сторон изображения */
   }
 
+  .inf-block {
+    font-family: 'Indie Flower', cursive;
+  }
+
   .store-name {
     text-align: center;
     color: white;
     margin-top: 20px;
     margin-bottom: 4px;
+    font-size: 25px;
   }
 
   .store-url {
@@ -32,15 +41,19 @@
   }
 
   .tg-logo {
-    margin-left: -4px;
-    margin-right: 4px;
+    margin-left: -10px;
+    margin-right: 10px;
     display: flex;
-    align-items: center;
+    
   }
 
   .text-url {
     display: flex;
     justify-content: center; /* Выравнивание по горизонтали */
     align-items: center;
-    font-size: 16px;
+    font-size: 17px;
+  }
+
+  .text-url a {
+    color: white;
   }
