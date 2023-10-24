@@ -57,3 +57,28 @@ body {
   .text-url a {
     color: white;
   }
+
+  .catalog-title {
+    margin-top: 18px;
+    margin-bottom: 32px;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+  }
+
+  .card-row {
+    height: 210px;
+    margin-bottom: 18px;
+  }
+
+  .product-card {
+    background-color: black;
+    border-radius: 35px;
+  }
+
+  .none {
+    background-color: #343D46;
+  }
