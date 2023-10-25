@@ -75,9 +75,15 @@ body {
   }
 
   .product-card {
-    width: 165px;
     background-color: black;
     border-radius: 35px;
+    height: 265px;
+    width: 170px;
+  }
+  
+  .left {
+    margin-left: 4px;
+    margin-right: 8px;
   }
 
   .none {
