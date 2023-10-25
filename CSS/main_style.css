@@ -78,13 +78,15 @@ body {
     background-color: black;
     border-radius: 35px;
     height: 265px;
-    width: 170px;
-  }
-  
-  .left {
-    margin-left: 4px;
+    width: 160px;
+    margin-left: 8px;
     margin-right: 8px;
   }
+  
+  /* .left {
+    margin-left: 4px;
+    margin-right: 4px;
+  } */
 
   .none {
     background-color: #343D46;
