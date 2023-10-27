@@ -1,0 +1,21 @@
+body { 
+    background-color: #000000;
+}
+.carousel {
+    overflow: hidden;
+  }
+  
+  .carousel-container {
+    display: flex;
+    transition: transform 0.3s ease;
+  }
+  
+  .carousel-slide {
+    flex: 0 0 100%;
+    padding: 10px;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }

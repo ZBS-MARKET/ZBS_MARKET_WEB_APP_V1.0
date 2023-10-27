@@ -25,6 +25,8 @@ body {
     font-family: 'Indie Flower', cursive;
   }
 
+
+  /* Стили блока с названием магазина */
   .store-name {
     text-align: center;
     color: white;
@@ -33,6 +35,8 @@ body {
     font-size: 25px;
   }
 
+
+  /* Стили блока со ссылкой */
   .store-url {
     border-radius: 26px;
     background-color: #343D46;
@@ -40,6 +44,8 @@ body {
     height: 40px;
   }
 
+
+  /* Стили логотипа Telegram */
   .tg-logo {
     margin-left: -10px;
     margin-right: 10px;
@@ -47,6 +53,8 @@ body {
     
   }
 
+
+  /* Стили текста ссылки */
   .text-url {
     display: flex;
     justify-content: center; /* Выравнивание по горизонтали */
@@ -54,10 +62,12 @@ body {
     font-size: 17px;
   }
 
+  /* Стили url ссылки */
   .text-url a {
     color: white;
   }
 
+  /* Стили надписи каталог */
   .catalog-title {
     margin-top: 18px;
     margin-bottom: 18px;
