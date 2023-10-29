@@ -133,7 +133,7 @@ body {
     font-size: 16px;
   }
 
-/* оформления части карточки с текстом в для маленького экрана */
+/* Оформления части карточки с текстом в для маленького экрана */
 @media screen and (max-width: 380px) { 
   .card-text {
     margin-top: 16px;
@@ -141,5 +141,11 @@ body {
   }
   .product-price {
     margin-top: 20px;
+  }
+}
+
+@media  screen and (min-width: 400px) {
+  .product-card {
+    max-width: 185px;
   }
 }

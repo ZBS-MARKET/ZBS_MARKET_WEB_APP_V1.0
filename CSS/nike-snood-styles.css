@@ -1,3 +1,22 @@
 body {
     background-color: black;
 }
+
+.header {
+    background-color: white;
+    height: 30px;
+    border-radius: -30px;
+}
+
+.photo-count {
+    font-size: 18px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-align: center;
+    padding: 0 8px 0 8px;
+    border-radius: 40px;
+    color: white;
+    background-color: black;
+}
