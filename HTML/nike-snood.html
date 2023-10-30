@@ -1,41 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/reset.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../CSS/nike-snood-styles.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sansita&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NIKE SNOOD STRIKE WINTER WARRIOR</title>
 </head>
 <body>
+  <div class="photos">
     <!-- Карусель обоев -->
     <div id="carouselExampleIndicators" class="carousel slide">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="../SRC/snoods/snood-1.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="../SRC/snoods/snood-2.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="../SRC/snoods/snood-1.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="../SRC/snoods/snood-2.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      </button>
+    </div>
+  <!-- Заголовок товара -->
+  <div class="header">
+    <!-- Строка с количеством фото -->
+      <div class="row">
+          <div class="col-12">
+              <div class="container">
+                  <div class="col-3 photo-count">
+                      2 фото
+                  </div>
+              </div>
+          </div> 
+      </div>
+      <div class="container">
+        <div class="product-name">
+          NIKE SNOOD STRIKE WINTER WARRIOR
+        </div>
+      </div>
+      <!-- Цена товара -->
+      <div class="product-price">
+        <div class="container">
+          <div class="product-price-text">
+            1590₽
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-        </button>
       </div>
 
-    <div class="header">
-        <div class="row">
-            <div class="col-12">
-                <div class="container">
-                    <div class="col-3 photo-count">
-                        2 фото
-                    </div>
-                </div>
-            </div> 
+      <!-- Размерная сетка -->
+      <div class="product-sizes">
+        <div class="container">
+          <div class="product-sizes-text">
+            Размер RU
+          </div>
+          <div class="container">
+            <div class="row sizes-row">
+              <div class="size">
+                S
+              </div>
+              <div class="size">
+                M
+              </div>
+              <div class="size">
+                L
+              </div>
+            </div>
+          </div>
+        
+          <div class="product-count">
+            Количество
+          </div>
         </div>
-    </div>
+      </div>
+  </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     </body>
 </html>
