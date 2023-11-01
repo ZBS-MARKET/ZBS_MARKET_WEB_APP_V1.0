@@ -52,10 +52,16 @@ body {
     padding: 0 0 10px 0;
 }
 
+.sizes-count-porduct {
+    background-color: black;
+}
+
 .product-sizes {
     background-color: #333333;
     color: white;
     font-size: 18px;
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
 }
 
 .product-sizes-text { 
@@ -80,10 +86,12 @@ body {
 }
 
 .product-count { 
-    margin: 10px 0 0 0;
+    margin: 10px 0 10px 0;
 }
 
-
+#customRange3 {
+    margin-bottom: 20px;
+}
 .count-number {
     margin-bottom: -16px;
     font-size: 12px;
