@@ -52,10 +52,6 @@ body {
     padding: 0 0 10px 0;
 }
 
-.sizes-count-porduct {
-    background-color: black;
-}
-
 .product-sizes {
     background-color: #333333;
     color: white;
@@ -93,8 +89,13 @@ body {
     margin-bottom: 20px;
 }
 .count-number {
-    margin-bottom: -16px;
+    /* margin-bottom: -16px; */
     font-size: 12px;
     text-align: center;
     width: 10%;
+}
+
+.product-sizes-page {
+    margin-top: 20px;
+    color: white;
 }
