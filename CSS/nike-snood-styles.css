@@ -114,10 +114,6 @@ body {
     background-color: #198754;
 }
 
-#buyProduct:active {
-    background-color: #333333;
-    color: white;
-}
 
 #sizesOfProduct {
     background-color: #333333;
@@ -167,13 +163,16 @@ body {
   .reviews-photos img{
     padding-left: 10px;
     margin-right: 10px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     height: 140px;
     width: auto;
   }
   
-#reviews-btn {
-    color: white;
+.all-reviews {
     border: 1px solid white;
+    margin-top: 8px;
+    background-color: #333333;
+    padding: 0.75rem 0.375rem;
+    text-align: center;
     border-radius: 35px;
 }
