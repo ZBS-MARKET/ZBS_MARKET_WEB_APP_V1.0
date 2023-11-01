@@ -99,3 +99,34 @@ body {
     margin-top: 20px;
     color: white;
 }
+
+.btn {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    font-size: 21px;
+    border-radius: 35px;
+    width: 100%;
+    margin-top: 8px;
+    color: white;
+    background-color: #198754;
+}
+
+#sizesOfProduct {
+    background-color: #333333;
+}
+
+.aSizeOfProduct {
+    
+    color: white;
+    text-decoration: none;    
+}
+
+.sizes-product {
+    margin-top: 8px;
+    background-color: #333333;
+    padding: 0.75rem 0.375rem;
+    text-align: center;
+    border-radius: 35px;
+}
