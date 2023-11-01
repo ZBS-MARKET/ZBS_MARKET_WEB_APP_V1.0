@@ -10,6 +10,16 @@ body {
     line-height: normal;
 }
 
+.back-img {
+    padding-left: 5px;
+    background-color: white;
+}
+
+.aSizeOfProduct img {
+    width: 10px;
+    height: auto;
+}
+
 .photos {
     background-color: white;
 }
