@@ -84,6 +84,7 @@ body {
 }
 
 .count-number {
+    font-size: 12px;
     text-align: center;
     width: 10%;
 }
