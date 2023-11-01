@@ -83,7 +83,9 @@ body {
     margin: 10px 0 0 0;
 }
 
+
 .count-number {
+    margin-bottom: -16px;
     font-size: 12px;
     text-align: center;
     width: 10%;
