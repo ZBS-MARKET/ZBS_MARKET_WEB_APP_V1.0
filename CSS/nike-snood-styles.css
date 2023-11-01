@@ -109,8 +109,14 @@ body {
     border-radius: 35px;
     width: 100%;
     margin-top: 8px;
+    margin-bottom: 8px;
     color: white;
     background-color: #198754;
+}
+
+#buyProduct:active {
+    background-color: #333333;
+    color: white;
 }
 
 #sizesOfProduct {
@@ -130,3 +136,38 @@ body {
     text-align: center;
     border-radius: 35px;
 }
+
+.horizontal-scroll {
+    margin: 8px 0 0 0;
+    width: 100%; /* Ширина контейнера, по желанию */
+    overflow-x: auto; /* Включить горизонтальную прокрутку */
+  }
+  
+  .reviews {
+    position: relative;
+    border-radius: 35px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    font-size: 21px;
+    background-color: #333333;
+    color: white;
+  }
+
+  .name-block {
+    padding: 8px 12px;
+  }  
+
+  .reviews-photos {
+    white-space: nowrap; /* Предотвратить перенос строк */
+    padding-bottom: 25px;
+  }
+
+  .reviews-photos img{
+    padding-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 20px;
+    height: 140px;
+    width: auto;
+  }
