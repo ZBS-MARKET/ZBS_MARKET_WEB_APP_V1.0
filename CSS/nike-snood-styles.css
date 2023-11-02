@@ -88,18 +88,124 @@ body {
     padding-bottom: 20px;
 }
 
-#customRange3 {
-    margin-bottom: 20px;
+/* Аккардеон с информацией */
+.informationAccardionBtn {
+    width: 100%;
+    border: 0px;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-bottom: 25px;
+
+    /* Оформления текста кнопки */
+    text-align: left;
+    background-color: #333333;
+    color: white;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
 }
 
-.product-sizes-page {
-    margin-top: 20px;
+/* Иконка-стрелка внутри кнопки */
+.informationAccardionBtn img {
+    margin-top: -10px;
+    padding-left: 10px;
+}
+/* ==========================
+Настрокйи верхней части аккардеона
+=============================*/
+
+/* Оформление верхней кнопки */
+#topAccardion {
+    margin-top: 8px;
+    border-top-right-radius: 35px;
+    border-top-left-radius: 35px;
+}
+
+/* Открытвающийся блок */
+#topBlockInAccardeon {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s;
+    background-color: #333333;
+
+    /* Оформление текста */
     color: white;
 }
 
+/* Закрытое состояние блока */
+#topBlockInAccardeon.collapsed {
+    height: 0;
+}
 
-#sizesOfProduct {
+/* Открытое сосотояние блока */
+#topBlockInAccardeon.expanded {
+    height: auto;
+    padding-bottom: 8px;
+    padding-top: 8px;
+}
+
+/* ==========================
+Настрокйи срдней части аккардеона
+=============================*/
+#midBlockInAccardeon {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s;
     background-color: #333333;
+
+    /* Оформление текста */
+    color: white;
+}
+
+/* Закрытое состояние */
+#midBlockInAccardeon.collapsed {
+    height: 0;
+}
+
+/* Открытое состояние */
+#midBlockInAccardeon.expanded {
+    height: auto;
+    padding-bottom: 8px;
+    padding-top: 8px;
+}
+
+/* ==========================
+Настрокйи нижней части аккардеона
+=============================*/
+#bottomBlockInAccardeon {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s;
+    background-color: #333333;
+
+    /* Оформление текста */
+    color: white;
+}
+
+/* Закрытое состояние */
+#bottomBlockInAccardeon.collapsed {
+    height: 0;
+}
+
+/* Открытое состояние */
+#bottomBlockInAccardeon.expanded {
+    height: auto;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+}
+
+/* Настройка закругления кнопки */
+#bottomAccardion {
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+}
+
+/* Кнопка при открытом состоянии */
+#bottomAccardionExpended {
+    border-radius: 0;
 }
 
 .aSizeOfProduct {
