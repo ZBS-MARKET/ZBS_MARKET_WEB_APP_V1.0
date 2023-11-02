@@ -77,9 +77,9 @@ body {
 
 /* Характеристики-заголовок товара */
 .characteristicsHeader {
-    font-size: 20px;
-    margin-bottom: 8px;
     font-weight: 800;
+    font-size: 21px;
+    margin-bottom: 8px;
 }
 
 /* характеристики-текст */
@@ -225,14 +225,14 @@ body {
     margin-top: 8px;
     position: relative;
     border-radius: 35px;
-    font-weight: 800;
-    font-size: 21px;
     background-color: #333333;
     color: white;
   }
 
   .name-block {
     padding: 20px 12px 8px;
+    font-size: 21px;
+    font-family: 'Inter', sans-serif;
   }  
 
   .reviews-photos {
