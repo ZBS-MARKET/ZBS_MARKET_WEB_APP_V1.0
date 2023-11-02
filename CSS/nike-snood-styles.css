@@ -111,6 +111,8 @@ body {
     margin-top: -10px;
     padding-left: 10px;
 }
+
+
 /* ==========================
 Настрокйи верхней части аккардеона
 =============================*/
@@ -203,10 +205,8 @@ body {
     border-bottom-right-radius: 35px;
 }
 
-/* Кнопка при открытом состоянии */
-#bottomAccardionExpended {
-    border-radius: 0;
-}
+
+
 
 .aSizeOfProduct {
     
