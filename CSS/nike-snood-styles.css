@@ -88,6 +88,78 @@ body {
     padding-bottom: 20px;
 }
 
+/* Блок с ценой и количеством товара */
+.sizeAndCount {
+    padding-top: 8px;
+    margin-top: 8px;
+    background-color: #333333;
+    border-radius: 35px;
+}
+
+/* Оформление текста размеров */
+.size {
+    color: white;
+    font-size: 21px;
+    font-weight: 800;
+}
+
+
+/* Оформление ссылки на размерную сетку */
+.sizeSheet {
+    text-align: right;
+}
+.sizeSheet a {
+    text-decoration: none;
+    color: #ABCDEF;
+}
+
+/* Настройка строки с кнопками выбора заказа */
+.sizesButtonRow {
+    padding-bottom: 8px;
+    margin-top: 8px;
+    border-bottom: 1px solid #696969;
+}
+
+/* Размерные кнопки */
+.sizeButton {
+    margin-bottom: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-right: 20px;
+    background-color: #333333;
+    width: 46px;
+    height: 34px;
+
+    font-size: 16px;
+    font-weight: 800;
+    color: white;
+}
+
+/* Заголовок блока количества */
+#countSizes {
+    margin-top: 8px;
+    color: white;
+    font-weight: 800;
+    font-size: 21px;
+}
+
+/* Заголовок блока, когда незаполнен */
+.empty {
+    margin-bottom: 50px;
+}
+
+/* Заголовок блока, когда заполнен */
+.fill {
+    margin-bottom: 8px;
+}
+
+
+/* Выбранные размеры */
+.confirmSizes {
+    margin-top: 8px;
+    padding-bottom: 8px;
+}
+
 /* Аккардеон с информацией */
 .informationAccardionBtn {
     width: 100%;
@@ -244,7 +316,7 @@ body {
     padding-left: 10px;
     margin-right: 10px;
     padding-bottom: 10px;
-    height: 140px;
+    height: 200px;
     width: auto;
   }
   
