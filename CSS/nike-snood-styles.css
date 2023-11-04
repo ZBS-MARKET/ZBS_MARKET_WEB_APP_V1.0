@@ -327,5 +327,26 @@ body {
     padding: 0.75rem 0.375rem;
     text-align: center;
     border-radius: 35px;
-    margin-bottom: 20px;
+    margin-bottom: 70px;
+}
+
+.buyButtonBlock {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    background-color: #333333;
+    padding: 10px;
+}
+
+#buyButton {
+    color: white;
+    font-weight: 800;
+    
+    padding: 0.75rem 0.375rem;
+    width: 100%;
+    border: none; 
+    border-radius: 35px;
+    background-color: #6565E8;
+    text-align: center;
 }
