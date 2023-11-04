@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../CSS/reset.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/nike-snood-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sansita&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIKE SNOOD STRIKE WINTER WARRIOR</title>
+</head>
+<body>
+  <!-- Кнопка назад -->
+  <a href="../index.html" class="backButton">
+    <div class="back-img">
+      <img src="../SRC/free-icon-back-130882.png" alt="back-logo">
+    </div>
+  </a>
+  <div class="photos">
+    <!-- Карусель обоев -->
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="../SRC/hats/hat-stone-1.jpg" class="d-block w-100" alt="">
+        </div>
+        <div class="carousel-item">
+          <img src="../SRC/hats/hat-stone-2.jpg" class="d-block w-100" alt="">
+        </div>
+        <div class="carousel-item">
+          <img src="../SRC/hats/hat-stone-3.jpg" class="d-block w-100" alt="">
+        </div>
+        <div class="carousel-item">
+          <img src="../SRC/hats/hat-stone-4.jpg" class="d-block w-100" alt="">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      </button>
+    </div>
+  </div>
+
+  <!-- Заголовок товара -->
+  <div class="header">
+    <!-- Строка с количеством фото -->
+      <div class="row">
+          <div class="col-12">
+              <div class="container">
+                  <div class="col-3 photo-count">
+                      4 фото
+                  </div>
+              </div>
+          </div> 
+      </div>
+
+      <!-- Название товара -->
+      <div class="container">
+        <div class="product-name">Шапка-ушанка Stone Island</div>
+      </div>
+    
+      <!-- Цена товара -->
+      <div class="product-price">
+        <div class="container">
+          <div class="product-price-text" id="priceBlock">1890₽</div>
+        </div>
+      </div>
+       
+      <!-- Характеристики товара -->
+      <div class="backdroundCharacteristics">
+        <div class="characteristics">
+          <div class="container">
+            <div class="characteristicsHeader">Характеристики</div>
+            <div class="characteristicsText">
+                🖤🗿Шапка-ушанка Stone island, сочетающая в себе эстетичный вид, сохранность тепла и универсальность
+                <br>⚫️Детали:
+                <br>-Eдиный размeр, pемешок регулируeтся
+                <br>-Hапoлнитель холлoфайбеp
+                <br>-Maтepиaл плотный
+                <br>-Cъeмнaя зaщитa лица от ветра и мoрoзa нa зaщёлкаx
+                <br>-C задней стopоны шaпки peфлeктивнaя пoлоcкa
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+
+<!-- Выбор размера и количества  -->
+<div class="sizeAndCount">
+  <div class="container">
+    <div class="row">
+      <!-- Размер -->
+      <div class="col-6 size">Размер RU</div>
+      <!-- Ссылка на размерную сетку -->
+      <div class="col-6 sizeSheet"><a href="../HTML/sizesTable.html">Размерная сетка</a></div>
+    </div>
+    <!-- Строка с кнопками выбора размера -->
+    <div class="container">
+      <div class="row sizesButtonRow">
+        <button type="button" class="sizeButton" onclick="TakeSize(this)">L</button>
+      </div>
+    </div>
+    <div class="empty" id="countSizes">Количество</div>
+    <div class="container">
+      <div class="row confirmSizes" id="countConfirmSizes"></div>
+    </div>
+  </div>
+</div>
+
+<!-- Аккардеоны с информацией -->
+<div class="informationAccardions">
+  <!-- Верхняя кнопка аккардеона -->
+  <button type="button" id="topAccardion" class="informationAccardionBtn">
+    <div class="row">
+      <div class="col-9">Страховка и безопасность</div>
+      <div class="col-3">
+        <img src="../SRC/down-arrow.png" alt="downArrow">
+      </div>
+    </div>
+  </button>
+  <div id="topBlockInAccardeon"class="collapsed">
+    <div class="container">
+      В стоимость товара входит его полное страхование. Мы несем ответственность, чтобы вы получили свой заказ в целости и сохранности, но возможны и , так называемые, форсмажоры, которые мы, к сожалению, не в силах предвидеть - это не лучшая логистика ТК. Возможны небольшие задержки с доставкой товаров.
+    </div>
+  </div>
+
+  <!-- Средний блок -->
+  <button type="button" id="midAccardion" class="informationAccardionBtn">
+    <div class="row">
+      <div class="col-9">Доставка</div>
+      <div class="col-3">
+        <img src="../SRC/down-arrow.png" alt="downArrow">
+      </div>
+    </div>
+  </button>
+  <div id="midBlockInAccardeon" class="collapsed">
+    <div class="container">
+      Мы находимся в городе Пермь, рассчитать примерное время доставки вы можете на сайтах транспортных компаний, с которыми мы сотрудничаем. А именно это: <span style="font-weight: 800;">СДЭК, Почта России, Боксберри</span>. После оплаты заказа вам будет выслан трек-номер вашей посылки, по которому вы сможете отслеживать статусы доставки и получать уведомления об их изменении.
+    </div>
+  </div>
+
+  <!-- Нижний блок -->
+  <button type="button" id="bottomAccardion" class="informationAccardionBtn">
+    <div class="row">
+      <div class="col-9">Оптовый заказ</div>
+      <div class="col-3">
+        <img src="../SRC/down-arrow.png" alt="downArrow">
+      </div>
+    </div>
+  </button>
+  <div id="bottomBlockInAccardeon"class="collapsed">
+    <div class="container">
+      В нашем магазине также доступна оптовая продажа товаров. Сделка купли-продажи напрямую согласовывается с менеджером ZBS Market. Связывайтесь в личных сообщениях: <a href="https://t.me/Manager_ZBSmarket" style="text-decoration: none;">@Manager_ZBSmarket</a>
+    </div>
+  </div>
+  
+</div>
+
+  <!-- Отзывы -->
+<div class="reviews">
+  <div class="name-block">Отзывы</div>
+  <div class="horizontal-scroll">
+    <div class="reviews-photos">
+    </div>
+  </div>
+</div>
+
+<!-- Ссылка-кнопка на канал со всеми отзывами -->
+<a href="https://t.me/+6Hu-akJYr_0yY2Ri" class="aSizeOfProduct">
+  <div class="all-reviews">
+    Открыть все отзывы
+  </div>
+</a>
+
+<!-- Кнопка покупки товара -->
+<div class="buyButtonBlock">
+  <button type="button" id="buyButton">Перейти к покупке</button>
+</div>
+
+
+<!-- Подключения скрипта для Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+<!-- Аккардеон скрипт -->
+<script src="../JS/accordionScript.js"></script>
+
+<!-- Скрипт создания заказа -->
+<script src="../JS/calculateOrder.js"></script>
+</body>
+</html>
