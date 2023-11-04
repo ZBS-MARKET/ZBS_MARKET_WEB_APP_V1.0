@@ -1,8 +1,22 @@
 body{
     background-color: #333333;
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
 }
 
-.sizesTables img{
-    width: 100%;
-    height: auto;
+/* Заголок страницы с размерными рядами */
+.sizeTitle {
+    color: white;
+    margin: 20px 0;
+    text-align: center;
+    font-size: 21px;
+    
+}
+
+/* Подпись таблицы */
+.titleOfTable {
+    padding: 5px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
 }
