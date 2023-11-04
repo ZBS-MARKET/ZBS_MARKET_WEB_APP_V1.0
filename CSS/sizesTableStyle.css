@@ -20,3 +20,9 @@ body{
     font-size: 16px;
     font-weight: 600;
 }
+
+.horizontal-scroll {
+    margin: 8px 0 0 0;
+    width: 100%; /* Ширина контейнера, по желанию */
+    overflow-x: auto; /* Включить горизонтальную прокрутку */
+  }
