@@ -8,10 +8,24 @@ body {
     font-weight: 800;
 }
 
+.backButton{
+    background-color: white;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+}
+
 .back-img {
     padding-top: 5px;
     padding-left: 5px;
-    background-color: white;
+    padding-bottom: 5px;
+}
+.back-img img {
+    width: 20px;
+    height: auto;
 }
 
 .aSizeOfProduct img {
@@ -21,6 +35,7 @@ body {
 
 .photos {
     background-color: white;
+    margin-top: 30px;
 }
 
 .header {
@@ -122,13 +137,14 @@ body {
 
 /* Размерные кнопки */
 .sizeButton {
+    text-align: center;
     margin-bottom: 5px;
     border-radius: 5px;
     border: 1px solid black;
     margin-right: 20px;
     background-color: #333333;
-    width: 46px;
-    height: 34px;
+    width: 60px;
+    height: 45px;
 
     font-size: 16px;
     font-weight: 800;

@@ -7,7 +7,7 @@ body{
 /* Заголок страницы с размерными рядами */
 .sizeTitle {
     color: white;
-    margin: 20px 0;
+    margin: 40px 0;
     text-align: center;
     font-size: 21px;
     
@@ -26,3 +26,23 @@ body{
     width: 100%; /* Ширина контейнера, по желанию */
     overflow-x: auto; /* Включить горизонтальную прокрутку */
   }
+
+.backButton{
+    background-color: white;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+}
+
+.back-img {
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+}
+.back-img img {
+    width: 20px;
+    height: auto;
+}
