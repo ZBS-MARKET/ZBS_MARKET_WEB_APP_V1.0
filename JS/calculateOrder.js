@@ -77,6 +77,6 @@ function TakeSize(button) {
 }
 
 
-var WebApp = window.Telegram.WebApp;
+let WebApp = window.Telegram.WebApp;
 
 WebApp.showAlert("Добро пожаловать в наше веб приложение!")
