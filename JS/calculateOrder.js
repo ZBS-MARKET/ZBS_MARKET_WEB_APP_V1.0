@@ -87,21 +87,33 @@ function GetOrder(){
   const priceBlock = document.getElementById('priceBlock');
   const priceOfProduct = parseInt(priceBlock.textContent, 10); // Преобразуем цену в число 
   // Получаем артикул товара 
-  const productArt = document.getElementById("articul").value;
-  // Словарь с размерами и так хранится в памяти компьютера
-  
-  // привязываем окно телеграм 
-  let tg = window.Telegram.WebApp;
-
+  const productArt = document.getElementById("articul").innerText;
   // Готовим json объект для передачи его в качестве строки, для удобной работы в Python 
   let data = {
     prise: priceOfProduct,
-    articul: productArt,
-    sizes: sizeDict
+    articul: productArt
   };
+
+  // Словарь с размерами преобразуем к массивук и передаем в JSON объект
+  let sizeArray = Array.from(sizeDict);
+  sizeArray.forEach(([key, value]) => {
+    data[key] = value;
+  });
+
+  // привязываем окно телеграм 
+  let tg = window.Telegram.WebApp;
+
   // Передаем строку в нашего бота 
+  // Добавляем условие, что должен быть выбран хоть один размер для отправки заказа
+  if(sizeArray.length === 0){
+    tg.showAlert("Требуется выбрать хотя бы один размер для заказа")
+  }
+  else{
+  // Отправляем данные
   tg.sendData(JSON.stringify(data));
   // Закрываем окно 
   tg.close();
+  }
+  
 
 }
