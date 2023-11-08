@@ -206,5 +206,16 @@
 
 <!-- Скрипт для работы с Telegram WebApp -->
 <script src="https://telegram.org/js/telegram-web-app.js"></script>
+
+<script>
+  const backButton = new BackButton();
+  backButton.show();
+  backButton.onClick(() => {
+  // Ваш код для перехода на предыдущую страницу
+  // Например, можно использовать window.history.back()
+  window.history.back();
+});
+
+</script>
 </body>
 </html>
