@@ -207,13 +207,7 @@
 <!-- Скрипт для работы с Telegram WebApp -->
 <script src="https://telegram.org/js/telegram-web-app.js"></script>
 
-<!-- Скрипт для кнопки назад -->
-<script>
-  let tg = window.Telegram.WebApp;
-  tg.BackButton.show();
-  Telegram.WebApp.onEvent('backButtonClicked', function() {
-    window.history.back()
-  });
-</script>
+<!-- Добавление кнопки назад в WebApp -->
+<script src="../JS/helpfulSettingsWebApp.js"></script>
 </body>
 </html>
