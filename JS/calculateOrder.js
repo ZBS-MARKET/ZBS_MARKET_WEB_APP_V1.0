@@ -75,3 +75,8 @@ function TakeSize(button) {
   const container = document.getElementById('countConfirmSizes'); // Получаем блок для вставки
   container.appendChild(newButton); // Добавляем кнопку в блок
 }
+
+
+var WebApp = window.Telegram.WebApp;
+
+WebApp.showAlert("Добро пожаловать в наше веб приложение!")
