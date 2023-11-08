@@ -211,7 +211,7 @@
 <script>
   let tg = window.Telegram.WebApp;
   tg.BackButton.show();
-  tg.WebApp.onEvent('backButtonClicked', function() {
+  Telegram.WebApp.onEvent('backButtonClicked', function() {
     window.history.back()
   });
 </script>
