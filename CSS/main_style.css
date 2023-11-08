@@ -105,7 +105,12 @@ body {
 
 /* Карточка для ровной разметки */
   .none {
+    position: relative;
     background-color: #343D46;
+    height: 265px;
+    width: 160px;
+    padding: 0;
+    margin: 0 8px
   }
 
 /* Стили фото карточки */

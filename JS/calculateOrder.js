@@ -75,3 +75,33 @@ function TakeSize(button) {
   const container = document.getElementById('countConfirmSizes'); // Получаем блок для вставки
   container.appendChild(newButton); // Добавляем кнопку в блок
 }
+
+function GetOrder(){
+  // Нам требуется получить: 
+  // 1) Цена за выбранные единицы товара
+  // 2) Уникальный артикул 
+  // 3) Словарь с размерами товара, которые хочет покупатель
+
+
+  // Получаем цену, которую подсчитало WebApp 
+  const priceBlock = document.getElementById('priceBlock');
+  const priceOfProduct = parseInt(priceBlock.textContent, 10); // Преобразуем цену в число 
+  // Получаем артикул товара 
+  const productArt = document.getElementById("articul").value;
+  // Словарь с размерами и так хранится в памяти компьютера
+  
+  // привязываем окно телеграм 
+  let tg = window.Telegram.WebApp;
+
+  // Готовим json объект для передачи его в качестве строки, для удобной работы в Python 
+  let data = {
+    prise: priceOfProduct,
+    articul: productArt,
+    sizes: sizeDict
+  };
+  // Передаем строку в нашего бота 
+  tg.sendData(JSON.stringify(data));
+  // Закрываем окно 
+  tg.close();
+
+}
