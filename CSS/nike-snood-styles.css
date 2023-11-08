@@ -8,15 +8,6 @@ body {
     font-weight: 800;
 }
 
-.backButton{
-    background-color: white;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    
-}
 
 .back-img {
     padding-top: 5px;
@@ -33,10 +24,6 @@ body {
     height: auto;
 }
 
-.photos {
-    background-color: white;
-    margin-top: 30px;
-}
 
 .header {
     background-color: white;
