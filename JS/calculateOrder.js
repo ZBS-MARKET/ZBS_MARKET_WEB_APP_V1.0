@@ -6,6 +6,9 @@ const priceOfProduct = parseInt(priceBlock.textContent, 10); // Преобраз
 // Создаем словарь для хранения данных о размерах заказа
 let sizeDict = new Map();
 
+// Создаем JSON объект для хранения состава заказа
+let data = {};
+
 // Функция обработки нажатия на дочернюю кнопку
 function RemoveSize(button) {
   const buttonText = button.textContent; // Получаем размер товара
@@ -89,10 +92,9 @@ function GetOrder(){
   // Получаем артикул товара 
   const productArt = document.getElementById("articul").innerText;
   // Готовим json объект для передачи его в качестве строки, для удобной работы в Python 
-  let data = {
-    prise: priceOfProduct,
-    articul: productArt
-  };
+  data["price"] = priceOfProduct;
+  data["articul"] = productArt;
+
 
   // Словарь с размерами преобразуем к массивук и передаем в JSON объект
   let sizeArray = Array.from(sizeDict);
@@ -108,12 +110,12 @@ function GetOrder(){
   if(sizeArray.length === 0){
     tg.showAlert("Требуется выбрать хотя бы один размер для заказа")
   }
-  else{
+  // else{
   // Отправляем данные
-  tg.sendData(JSON.stringify(data));
+  // tg.sendData(JSON.stringify(data)); // Отправляем данные после заполнения всех полей 
   // Закрываем окно 
-  tg.close();
-  }
-  
+  // tg.close(); // Окно будем закрывать после оформаления 
+  // }
 
+  window.open('../HTML/delivery.html')
 }

@@ -1,0 +1,37 @@
+body {
+    background-color: #343D46;
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    font-size: 21px;
+    color: white;
+}
+
+/* Блок с заголовком страницы */
+.title {
+    display: flex;
+    justify-content: center;
+}
+
+/* Заголовок страницы */
+.title__block {
+    background: black;
+    padding: 5px 20px;
+    width: auto;
+    height: auto;
+    border-radius: 5px;
+    margin: 36px 0;
+}
+
+/* Блок с кнопками выбора способа получения товара */
+.delivery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Кнопки выбора способа оплаты */
+.delivery__type {
+    margin: 0 0 21px 0;
+    border: 0;
+    border-radius: 5px;
+}
