@@ -110,12 +110,11 @@ function GetOrder(){
   if(sizeArray.length === 0){
     tg.showAlert("Требуется выбрать хотя бы один размер для заказа")
   }
-  // else{
+  else{
   // Отправляем данные
   // tg.sendData(JSON.stringify(data)); // Отправляем данные после заполнения всех полей 
   // Закрываем окно 
   // tg.close(); // Окно будем закрывать после оформаления 
-  // }
-
-  window.open('../HTML/delivery.html')
+  window.location.href = '../HTML/delivery.html'
+  }
 }
