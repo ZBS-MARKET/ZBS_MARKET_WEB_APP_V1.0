@@ -119,6 +119,29 @@ function GetOrder(){
   }
 }
 
+// Функция откртия следующеф страницы для кнопки CDEK
 function GoToGetOrderFrom(){
   window.location.href = "../HTML/order-form.html"
+}
+
+// Функция для добавления данных о пользователя для доставки 
+function PlaceData(){
+  const FIO = document.getElementById('fullName').value;
+  const phoneNumber = document.getElementById('phoneNumber').value;
+  const deliveryAddress = document.getElementById('deliveryAddress').value;
+
+  data['FIO'] = FIO;
+  data['phoneNumber'] = phoneNumber;
+  data['deliveryAddress'] = deliveryAddress;
+
+  let tg = window.Telegram.WebApp;
+  var countOfWarning = 0; // Переменная для счетчиков предупреждения 
+  if (countOfWarning === 0){
+    tg.showAlert('Убедитесь в правильности введенных данных!!!');
+    countOfWarning = countOfWarning + 1;
+  }
+  else {
+    tg.sendData(JSON.stringify(data));
+    tg.close;
+  }
 }
