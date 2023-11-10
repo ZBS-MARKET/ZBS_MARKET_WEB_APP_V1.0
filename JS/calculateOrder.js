@@ -135,13 +135,13 @@ function PlaceData(){
   data['deliveryAddress'] = deliveryAddress;
 
   let tg = window.Telegram.WebApp;
-  var countOfWarning = 0; // Переменная для счетчиков предупреждения 
+  let countOfWarning = 0; // Переменная для счетчиков предупреждения 
   if (countOfWarning === 0){
     tg.showAlert('Убедитесь в правильности введенных данных!!!');
     countOfWarning = countOfWarning + 1;
   }
   else {
     tg.sendData(JSON.stringify(data));
-    tg.close;
+    tg.close();
   }
 }
