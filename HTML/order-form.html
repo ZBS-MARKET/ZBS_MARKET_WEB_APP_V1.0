@@ -71,10 +71,18 @@
     <label for="deliveryAddress">Адрес доставки:</label>
     <input type="text" id="deliveryAddress" name="deliveryAddress" required>
 
-    <button type="submit">Сделать заказ</button>
+    <button type="submit" onclick="PlaceData()">Сделать заказ</button>
   </form>
 </div>
 
+  
+    <!-- Скрипт для работы с Telegram WebApp -->
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
 
+    <!-- Добавление кнопки назад в WebApp -->
+    <script src="../JS/helpfulSettingsWebApp.js"></script>
+
+    <!-- Скрипт с отправкой данных о заказе -->
+    <script src="../JS/calculateOrder.js"></script>
 </body>
 </html>
