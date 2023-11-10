@@ -120,5 +120,5 @@ function GetOrder(){
 }
 
 function GoToGetOrderFrom(){
-  window.location.hrer = "../HTML/order-form.html"
+  window.location.href = "../HTML/order-form.html"
 }
