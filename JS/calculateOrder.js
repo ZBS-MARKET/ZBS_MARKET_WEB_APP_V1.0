@@ -118,3 +118,7 @@ function GetOrder(){
   window.location.href = '../HTML/delivery.html'
   }
 }
+
+function GoToGetOrderFrom(){
+  window.location.hrer = "../HTML/order-form.html"
+}

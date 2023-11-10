@@ -29,7 +29,7 @@
     <!-- Набор кнопок для выбора способа доставки -->
     <div class="container">
         <div class="delivery">
-            <button type="button" id="CDEK" class="delivery__type">
+            <button type="button" id="CDEK" class="delivery__type" onclick="GoToGetOrderFrom">
                <img src="../SRC/delivery-buttons-img/cdek-logo.jpg" alt="Способ доаставки - CDEK"> 
             </button>
             <button type="button" id="AVITO" class="delivery__type">
@@ -41,7 +41,16 @@
         </div>
     </div>
     
- 
-    
+    <!-- Скрипт для работы с Telegram WebApp -->
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+
+    <!-- Скрипт для кнопки назад -->
+    <script src="../JS/helpfulSettingsWebApp.js"></script>
+
+    <!-- Добавление кнопки назад в WebApp -->
+    <script src="../JS/helpfulSettingsWebApp.js"></script>
+
+    <!-- Скрипт с отправкой данных о заказе -->
+    <script src="../JS/calculateOrder.js"></script>
 </body>
 </html>

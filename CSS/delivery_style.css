@@ -31,6 +31,7 @@ body {
 
 /* Кнопки выбора способа оплаты */
 .delivery__type {
+    background-color: white;
     margin: 0 0 21px 0;
     border: 0;
     border-radius: 5px;
