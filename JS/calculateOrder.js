@@ -89,6 +89,7 @@ function GetOrder(){
   const priceOfProduct = parseInt(priceBlock.textContent, 10); // Преобразуем цену в число 
   // Получаем артикул товара 
   const productArt = document.getElementById("articul").innerText;
+  const intProductArt = parseInt(productArt, 10)
   // Готовим json объект для передачи его в качестве строки, для удобной работы в Python 
    const data = {
     price: priceOfProduct,
