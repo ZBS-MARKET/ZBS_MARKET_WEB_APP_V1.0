@@ -6,8 +6,6 @@ const priceOfProduct = parseInt(priceBlock.textContent, 10); // Преобраз
 // Создаем словарь для хранения данных о размерах заказа
 let sizeDict = new Map();
 
-// Создаем JSON объект для хранения состава заказа
-let data = {};
 
 // Функция обработки нажатия на дочернюю кнопку
 function RemoveSize(button) {
@@ -92,15 +90,19 @@ function GetOrder(){
   // Получаем артикул товара 
   const productArt = document.getElementById("articul").innerText;
   // Готовим json объект для передачи его в качестве строки, для удобной работы в Python 
-  data["price"] = priceOfProduct;
-  data["articul"] = productArt;
+   const data = {
+    price: priceOfProduct,
+    articul: productArt
+  }
 
 
-  // Словарь с размерами преобразуем к массивук и передаем в JSON объект
+  // Словарь с размерами преобразуем к массиву и передаем в JSON объект
   let sizeArray = Array.from(sizeDict);
   sizeArray.forEach(([key, value]) => {
     data[key] = value;
   });
+
+ console.log(JSON.stringify(data));
 
   // привязываем окно телеграм 
   let tg = window.Telegram.WebApp;
@@ -112,36 +114,9 @@ function GetOrder(){
   }
   else{
   // Отправляем данные
-  // tg.sendData(JSON.stringify(data)); // Отправляем данные после заполнения всех полей 
+  tg.sendData(JSON.stringify(data)); // Отправляем данные после заполнения всех полей 
   // Закрываем окно 
-  // tg.close(); // Окно будем закрывать после оформаления 
-  window.location.href = '../HTML/delivery.html'
+  tg.close(); // Окно будем закрывать после оформаления 
   }
 }
 
-// Функция откртия следующеф страницы для кнопки CDEK
-function GoToGetOrderFrom(){
-  window.location.href = "../HTML/order-form.html"
-}
-
-// Функция для добавления данных о пользователя для доставки 
-function PlaceData(){
-  const FIO = document.getElementById('fullName').value;
-  const phoneNumber = document.getElementById('phoneNumber').value;
-  const deliveryAddress = document.getElementById('deliveryAddress').value;
-
-  data['FIO'] = FIO;
-  data['phoneNumber'] = phoneNumber;
-  data['deliveryAddress'] = deliveryAddress;
-
-  let tg = window.Telegram.WebApp;
-  var countOfWarning = 0; // Переменная для счетчиков предупреждения 
-  if (countOfWarning === 0){
-    tg.showAlert('Убедитесь в правильности введенных данных!!!');
-    countOfWarning = countOfWarning + 1;
-  }
-  else {
-    tg.sendData(JSON.stringify(data));
-    tg.close;
-  }
-}
