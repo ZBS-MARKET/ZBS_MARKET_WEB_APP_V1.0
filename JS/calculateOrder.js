@@ -93,7 +93,7 @@ function GetOrder(){
   // Готовим json объект для передачи его в качестве строки, для удобной работы в Python 
    const data = {
     price: priceOfProduct,
-    articul: productArt
+    articul: intProductArt
   }
 
 
