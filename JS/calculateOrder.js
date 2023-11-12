@@ -90,10 +90,13 @@ function GetOrder(){
   // Получаем артикул товара 
   const productArt = document.getElementById("articul").innerText;
   const intProductArt = parseInt(productArt, 10)
+  // Получаем название товара
+  const productName = document.getElementById('productName').innerText
   // Готовим json объект для передачи его в качестве строки, для удобной работы в Python 
    const data = {
     price: priceOfProduct,
-    articul: intProductArt
+    articul: intProductArt,
+    p_name: productName
   }
 
 
